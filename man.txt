@@ -63,3 +63,13 @@ b/c/cc is type of data you give:
  * b means just clear byte to use
  * c means memory cell, from interpreter need to take byte
  * cc means memory cell, data of her shows on memory cell, what gives data
+
+
+
+-----===== example of starting compiling file =====-----
+java -jar FUD.jar compile (param) code_path exe_path
+ * (param) may be -n (normal mode) or -d (debug mode)
+
+-----===== example of starting compiling file =====-----
+java -jar FUD.jar run (param) exe_path file_to_save_path
+ * (param) may be -n (normal mode) or -d (debug mode)
