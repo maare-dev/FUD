@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="FUD:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/FUD_jar</output-path>
+    <root id="archive" name="FUD.jar">
+      <element id="module-output" name="FUD" />
+    </root>
+  </artifact>
+</component>

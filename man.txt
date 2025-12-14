@@ -1,0 +1,65 @@
+-----===== commands =====-----
+
+using version 0.0.1 gamma you can use 13 commands:
+
+increment: + c/cc cell
+ * adding 1 to memory cell
+
+decrement: - c/cc cell
+ * adding -1 to memory cell
+
+equal: = c/cc cell b/c/cc byte
+ * memory cell = next given data
+
+print char: out b/c/cc byte
+ * printing char with given number in ASCII
+
+check input: in b/c/cc code b/c/cc place
+ * if key with code is pressed jump to place with given number
+
+place: * b/c/cc byte
+ * shows interpreter that place with this number is here
+ * it can be written after jump command
+
+jump: jump b/c/cc place
+ * jumping to place with given number
+
+delay: delay b/c/cc byte
+ * makes program wait for given seconds
+
+save memory: save
+ * saving all cells of memory to file with second given path
+
+quit: quit b/c/cc code
+ * quit with given code
+
+draw frame: draw
+ * drawing frame
+
+load memory: load
+ * loading memory from file with second given path
+
+
+-----===== memory =====-----
+
+ * 255 - point_x (using for setting current pixel)
+ * 254 - point_y
+ *
+ * 253 - color_r (colour of current pixel) (changing on 255 or 254 change) (you can set this)
+ * 252 - color_g
+ * 251 - color_b
+ *
+ * 250 - mouse_x (shows mouse position in window) (always updating)
+ * 249 - mouse_y
+ *
+ * 248 - mouse_1button_status (left) (always updating)
+ * 247 - mouse_2button_status (middle)
+ * 246 - mouse_3button_status (right)
+
+
+-----===== comments =====-----
+
+b/c/cc is type of data you give:
+ * b means just clear byte to use
+ * c means memory cell, from interpreter need to take byte
+ * cc means memory cell, data of her shows on memory cell, what gives data
