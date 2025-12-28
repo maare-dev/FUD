@@ -1,3 +1,7 @@
 version 0.0.1 gamma
     first version of FUD
     13 commands
+
+version 0.0.2 beta
+    small change in command "in"
+    "if" fixed

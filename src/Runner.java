@@ -78,6 +78,7 @@ public class Runner {
             b = Files.read(Lang.first);
         }
     }
+    /*
     private static void safeGoto(int o){
         long lastPos = 0;
         try{
@@ -109,6 +110,7 @@ public class Runner {
             b = Files.read(Lang.first);
         }
     }
+     */
     private static void in(int[] o){
         checkUInt(o);
         if(Lang.mode == 1) System.out.print("in ");
@@ -124,7 +126,7 @@ public class Runner {
             case 2 -> mem[mem[o[3]]];
             default -> 0;
         };
-        if( input.isKeyPressed.getOrDefault(KeyEvent.getKeyText(val1), Boolean.FALSE) ) safeGoto(val2);
+        if( input.isKeyPressed.getOrDefault(KeyEvent.getKeyText(val1), Boolean.FALSE) ) _goto(val2);
     }
     private static void plus(int[] o){
         checkUInt(o);
@@ -188,8 +190,8 @@ public class Runner {
             default -> 0;
         };
         switch (o[2]){
-            case 0: if(val1 == val2) _goto(val3);
-            case 1: if(val1 > val2) _goto(val3);
+            case 0: if(val1 == val2) _goto(val3); if (Lang.mode == 1) System.out.print("\nif " + val1 + " == " + val2 + " goto " + val3 + "\n"); break;
+            case 1: if(val1 > val2) _goto(val3); if (Lang.mode == 1) System.out.print("\nif " + val1 + " > " + val2 + " goto " + val3 + "\n"); break;
         }
     }
     private static void jump(int[] o){
