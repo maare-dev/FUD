@@ -2,7 +2,7 @@ public class Compiler {
     public static void run(){
         try{
             Lang.second.setLength(0);
-        } catch (Exception _){}
+        } catch (Exception e){}
         while(true){
             String w = Files.readWord(Lang.first);
             switch(w){
