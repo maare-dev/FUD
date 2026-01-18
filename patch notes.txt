@@ -5,3 +5,6 @@ version 0.0.1 gamma
 version 0.0.2 beta
     small change in command "in"
     "if" fixed
+
+version 0.0.3 gamma
+    now you can switch cursor using argument

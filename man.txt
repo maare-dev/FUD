@@ -45,7 +45,7 @@ load memory: load
  * 255 - point_x (using for setting current pixel)
  * 254 - point_y
  *
- * 253 - color_r (colour of current pixel) (changing on 255 or 254 change) (you can set this)
+ * 253 - color_r (color of current pixel) (changing on 255 or 254 change) (you can set this)
  * 252 - color_g
  * 251 - color_b
  *
@@ -67,9 +67,11 @@ b/c/cc is type of data you give:
 
 
 -----===== example of starting compiling file =====-----
-java -jar FUD.jar compile (param) code_path exe_path
- * (param) may be -n (normal mode) or -d (debug mode)
+java -jar FUD.jar compile (param) code_path exe_path (cursor)
+ * (param) may be "-n" (normal mode) or "-d" (debug mode)
+ *  (cursor) may be "is" (visible) or "not"
 
------===== example of starting compiling file =====-----
-java -jar FUD.jar run (param) exe_path file_to_save_path
- * (param) may be -n (normal mode) or -d (debug mode)
+-----===== example of starting running file =====-----
+java -jar FUD.jar run (param) exe_path file_to_save_path (cursor)
+ * (param) may be "-n" (normal mode) or "-d" (debug mode)
+ * (cursor) may be "is" (visible) or "not"

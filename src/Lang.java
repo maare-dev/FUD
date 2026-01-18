@@ -5,6 +5,7 @@ public class Lang {
     public static int mode;
     public static RandomAccessFile first;
     public static RandomAccessFile second;
+    public static boolean isCursorVisible;
     public static void main(String[] args) {
         switch (args[0]) {
             case "run" -> callType = 0;
@@ -18,6 +19,10 @@ public class Lang {
         }
         first = Files.setRAF(args[2], "r");
         second = Files.setRAF(args[3], "rw");
+        switch (args[4]){
+            case "is": isCursorVisible = true; break;
+            case "not": isCursorVisible = false; break;
+        }
         switch (callType){
             case 0 -> Runner.run();
             case 1 -> Compiler.run();

@@ -7,6 +7,16 @@ public class Runner {
     private final static Window w = new Window(256, 255, 3, Info.lang_name + " | " + Info.version);
     private static final Input input = new Input(w.getFrame(), w.getPanel());
     public static void run(){
+        if (!Lang.isCursorVisible){
+            BufferedImage img = new BufferedImage(16, 16, BufferedImage.TYPE_INT_ARGB);
+            Cursor transparentCursor = Toolkit.getDefaultToolkit().createCustomCursor(
+                    img,
+                    new Point(0, 0),
+                    "invisibleCursor"
+            );
+            w.getFrame().setCursor(transparentCursor);
+            w.getFrame().setVisible(true);
+        }
         /*
         BufferedImage img = new BufferedImage(16, 16, BufferedImage.TYPE_INT_ARGB);
         Cursor transparentCursor = Toolkit.getDefaultToolkit().createCustomCursor(
