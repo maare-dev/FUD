@@ -29,9 +29,3 @@ public class Lang {
         }
     }
 }
-// -n normal
-// -d debug
-
-// java Lang run -n file_to_run file_to_save
-// java Lang compile -d file_to_compile file_to_write
-

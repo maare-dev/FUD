@@ -61,7 +61,11 @@ public class Window {
         Arrays.fill(pixels, argb);
     }
     public void drawFrame() {
-        panel.paintImmediately(0, 0, panel.getWidth(), panel.getHeight());
+        panel.paintImmediately(
+                0,
+                0,
+                panel.getWidth(),
+                panel.getHeight());
     }
     public void setScale(int s) {
         scale = s;

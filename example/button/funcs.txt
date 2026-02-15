@@ -1,0 +1,17 @@
+128 fill rect
+	data
+		2 x
+		3 y
+		456 rgb
+		7 end x
+		8 end y
+		9 y duplicated
+
+138 + x
+	data
+		2 number which need to +
+		3 how many need to add
+148 - x
+	data
+		2 number which need to -
+		3 how many need to sub
